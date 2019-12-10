@@ -88,7 +88,7 @@ Must merge back into:
 Branch naming convention:
 - `release-*`
 
-Release branches support preparation of a new production release. They allow for last-minute dotting of i’s and crossing t’s. Furthermore, they allow for minor bug fixes and preparing meta-data for a release (version number, build dates, etc.). By doing all of this work on a release branch, the `develop` branch is cleared to receive features for the next big release.
+`Remove this line and add the text from feature #6`
 
 The key moment to branch off a new release branch from `develop` is when `develop` (almost) reflects the desired state of the new release. At least all features that are targeted for the release-to-be-built must be merged in to `develop` at this point in time. All features targeted at future releases may not—they must wait until after the release branch is branched off.
 
@@ -150,7 +150,7 @@ Must merge back into:
 Branch naming convention:
 - `hotfix-*`
 
-Hotfix branches are very much like release branches in that they are also meant to prepare for a new production release, albeit unplanned. They arise from the necessity to act immediately upon an undesired state of a live production version. When a critical bug in a production version must be resolved immediately, a hotfix branch may be branched off from the corresponding tag on the `master` branch that marks the production version.
+`Remove this line and add the text from feature #8`
 
 ![Repo List](5.png)
 
@@ -203,5 +203,4 @@ Finally, remove the temporary branch:
 $ git branch -d hotfix-1.2.1
 Deleted branch hotfix-1.2.1 (was abbe5d6).
 ```
-### Summary
-While there is nothing really shocking new to this branching model, the “big picture” figure that this post began with has turned out to be tremendously useful in our projects. It forms an elegant mental model that is easy to comprehend and allows team members to `develop` a shared understanding of the branching and releasing processes.
+
