@@ -203,4 +203,4 @@ Finally, remove the temporary branch:
 $ git branch -d hotfix-1.2.1
 Deleted branch hotfix-1.2.1 (was abbe5d6).
 ```
-
+`Remove this line and add the text from feature #10`
