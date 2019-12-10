@@ -18,7 +18,7 @@ The `master` branch at `origin` should be familiar to every Git user. Parallel t
 
 ![Repo List](2.png)
 
-We consider origin/`master` to be the main branch where the source code of HEAD always reflects a *production-ready* state.
+We consider `origin/master` to be the main branch where the source code of HEAD always reflects a *production-ready* state.
 
 We consider `origin/develop` to be the main branch where the source code of HEAD always reflects a state with the latest delivered development changes for the next release. Some would call this the “integration branch”. This is where any automatic nightly builds are built from.
 
@@ -52,8 +52,6 @@ Branch naming convention:
 Feature branches (or sometimes called topic branches) are used to `develop` new features for the upcoming or a distant future release. When starting development of a feature, the target release in which this feature will be incorporated may well be unknown at that point. The essence of a feature branch is that it exists as long as the feature is in development, but will eventually be merged back into `develop` (to definitely add the new feature to the upcoming release) or discarded (in case of a disappointing experiment).
 
 ![Repo List](3.png)
-
-Feature branches typically exist in developer repos only, not in origin.
 
 ### Creating a feature branch
 When starting work on a new feature, branch off from the `develop` branch.
