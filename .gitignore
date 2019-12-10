@@ -91,4 +91,6 @@ modules.xml
 # Ignore all local history of files
 .history
 
+pavel.racy*
+
 # End of https://www.gitignore.io/api/intellij+iml,visualstudiocode
