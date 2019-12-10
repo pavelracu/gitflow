@@ -3,7 +3,7 @@
 ## A successful Git branching model
 In this post I present the development model that I’ve introduced for some of my projects (both at work and private) about a year ago, and which has turned out to be very successful. I’ve been meaning to write about it for a while now, but I’ve never really found the time to do so thoroughly, until now. I won’t talk about any of the projects’ details, merely about the branching strategy and release management.
 
-![Repo List](1.png)
+![Repo List](assets/1.png)
 
 ## Why git.
 *[... omitted for previty]*
@@ -16,7 +16,7 @@ In this post I present the development model that I’ve introduced for some of 
 
 The `master` branch at `origin` should be familiar to every Git user. Parallel to the `master` branch, another branch exists called `develop` (or `dev`).
 
-![Repo List](2.png)
+![Repo List](assets/2.png)
 
 We consider `origin/master` to be the main branch where the source code of HEAD always reflects a *production-ready* state.
 
@@ -48,7 +48,7 @@ Branch naming convention:
 
 `Remove this line and add the text from feature #3`
 
-![Repo List](3.png)
+![Repo List](assets/3.png)
 
 ### Creating a feature branch
 When starting work on a new feature, branch off from the `develop` branch.
@@ -72,7 +72,7 @@ $ git push origin develop
 ```
 The `--no-ff` flag causes the merge to always create a new commit object, even if the merge could be performed with a fast-forward. This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature. Compare:
 
-![Repo List](4.png)
+![Repo List](assets/4.png)
 
 In the latter case, it is impossible to see from the Git history which of the commit objects together have implemented a feature—you would have to manually read all the log messages. Reverting a whole feature (i.e. a group of commits), is a true headache in the latter situation, whereas it is easily done if the `--no-ff` flag was used.
 
@@ -152,7 +152,7 @@ Branch naming convention:
 
 `Remove this line and add the text from feature #8`
 
-![Repo List](5.png)
+![Repo List](assets/5.png)
 
 The essence is that work of team members (on the `develop` branch) can continue, while another person is preparing a quick production fix.
 
