@@ -4,9 +4,9 @@ In this post I present the development model that I’ve introduced for some of 
 ![Repo List](1.png)
 
 ## Why git.
-*[... omitet for previty]*
+*[... omitted for previty]*
 ## Decentralized but centralized
-*[... omitet for previty]*
+*[... omitted for previty]*
 
 ## The main branches
 
