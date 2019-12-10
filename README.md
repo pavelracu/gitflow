@@ -1,5 +1,5 @@
 # Gitflow workshop
-This repository is intended to introduce developers to gitflow. It will use the actual explanation of the gitflow (https://nvie.com/posts/a-successful-git-branching-model/).
+This repository is intended to introduce developers to gitflow. It will use the actual explanation of the [gitflow](https://nvie.com/posts/a-successful-git-branching-model/).
 
 By the end of this workshop the end result should be the original explanation of gitflow without any errors/misspellings.
 
